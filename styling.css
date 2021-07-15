@@ -1,11 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+html, body {
+    margin: 0px;
+}
+
 body {
     font-family:'Open Sans', serif;
 
 }
 
+.headernavbar {
+    color: white;
+    background-color: rgba(0,0,0,.2);
+}
+
+.navbar-brand {
+    padding-left: 5%;
+    color:white;
+    
+}
+
+.firstnavigation {
+    color:white;
+}
+
+.signuplogin{
+    color:white;
+}
+
  /* hero class */
+
+ /* font dan object ngikutin vh vw agar responsif dont use media */
 
 .hero {
     background: url(assets/main-bg.jpg);
@@ -13,6 +38,7 @@ body {
     height: 100vh;
     position:relative;
     background-size: cover;
+    background-position:center;
 }
 
 .hero-master {
@@ -22,40 +48,47 @@ body {
     text-align: center;
 }
 
+/* test case untuk page 1 */
+
+.hero-title {
+    overflow: hidden;
+    using clamp
+}
+
 .hero-title h1 {
-    padding-top: 15%;
-    font-size: 72px;
+    padding-top: 10%;
     color: white;
 }
 
-.hero-title p {
-    padding-top: 3%;
-    font-size: 24px;
+
+.hero-title h4 {
+    padding-top: 2%;
+    padding-bottom: 2%;
     color: white;
 }
 
 .hero-button {
-    align-items: center;
-    justify-content: center;
+
+    padding-bottom: 10%;
 }
 
 .btn {
-    margin-bottom: 10%;
+    
     font-size: 24px;
     font-weight: bold;
     color: black;
     background-color: orange;
-    padding: 0.25em 0.75em;
+
     text-align: center;
     line-height: 1.1;
-}
+    }
 
-.bottom-text {
-    color: white;
-}
+    .bottom-text {
+        color: white;
+    }
+
 
 /* game */
-
 .game {
     background: url(assets/the-games-bg.jpg);
     width: 100%;
@@ -65,33 +98,63 @@ body {
 }
 
 .game-content {
-    display: grid;
-    align-items: center;
-}
-
-.game-title {
-    align-items: center;
     padding-top: 10%;
-    color: white;
+    height: 100%;
+    min-height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: 1fr; */
+    grid-template-areas:
+      "title" "carousel" "carousel" "carousel" "carousel" ;
 }
 
-.game-title h1 {
-    font-size: 72px;
-}
+@media (min-width: 1020px) {
+    .game {
+        background: url(assets/the-games-bg.jpg);
+        width: 100%;
+        height: 100vh;
+        position:relative;
+        background-size: cover;
+    }
+    .game-content {
+        padding-top: 10%;
+        height: 100%;
+        min-height: 300px;
+        width: 100%;
+        display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        "title carousel carousel carousel carousel";
+    }
+    .d2 {
+        padding-top: 10%;
+    }
+  }
 
-.game-title p {
-    font-size: 20px;
-}
+  .d1 {
+      grid-area: title;
+      color: white;
+  }
 
-.content-carousel {
-    align-items: center;
-    background: lightgreen;
-}
+  .d1 h1 {
+      font-size: 72px;
+  }
 
-.img-carousel{
-    display: block;
-    max-width: 90%;
-}
+  .d1 p {
+      font-size: 24px;
+  }
+
+  .d2 {
+      grid-area: carousel;
+  }
+
+
+
+
 
 /* features */
 
@@ -102,6 +165,16 @@ body {
     position:relative; 
     background: url(assets/features.jpg);
     background-size: cover;
+}
+
+@media (min-width: 1020px) {
+    .features {
+    width: 100%;
+    height: 100vh;
+    position:relative; 
+    background: url(assets/features.jpg);
+    background-size: cover;
+    }
 }
 
 .list {
@@ -133,246 +206,184 @@ body {
     background-size: cover;
 }
 
-.system-req-title {
-    /* background:rgb(163, 165, 163); */
-    grid-area: header;
-    justify-content: center;
-    color: white;
-    padding-top: 10%;
-}
-
-.content-master {
-    height: 100%;
+.system-master {
+    padding-top: 5%;
+    background: red;
 }
 
 .content-system-req {
-    display: grid;
-    min-height: 300px;
-    height: 100%;
-    width: 100%;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "header header header"
-      "content content content"
-      ;
+    padding-top: 5%;
+    background: blue;
+
 }
 
-.table-list     {
-    grid-area: content;
-    padding-top: 10%;
+.system-req-title {
+    background: pink;
+
 }
 
-.table-child {
-    width: 100%;
-    table-layout:fixed;
-    border-collapse:collapse;
-}
-
-.table-child h2 {
-    color: orange;
-}
-
-.table-child p {
+.system-req-title h1 {
+    font-size: 60px;
     color: white;
+}
+
+.table-list {
+    padding-top: 5%;
+    background: green;
+
 }
 
 /* testimonials */
 
+
 .testimonials {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position:relative; 
-    background: url(assets/top-score-bg.png);
+    background: url(assets/top-footer-bg.png);
     background-size: cover;
 
 }
 
 .testimonials-content {
+    align-items: center;
+    justify-content: center;
     height: 100%;
     min-height: 300px;
     width: 100%;
-    background: LightGray;
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     /* grid-template-columns: 1fr 1fr; */
     /* grid-template-rows: 1fr; */
     grid-gap: 10px;
     grid-template-areas:
-      "header" "content" ;
+      "header" "content" "content"  ;
 }
 
 @media (min-width: 1020px) {
+.testimonials {
+    width: 100%;
+    height: 100vh;
+    position:relative; 
+    background: url(assets/top-footer-bg.png);
+    background-size: cover;
+
+}
     .testimonials-content {
         height: 100%;
         min-height: 300px;
         width: 100%;
-        background: LightGray;
         display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
       grid-template-areas:
         "header content";
     }
+    .item1 {
+        padding-left: 10%;
+        display:grid;
+        grid-area: header;
+        align-items: center;
+      }   
   }
 
   .item1 {
-      grid-area:header;
+      display:grid;
+      grid-area: header;
+      align-items: center;
+      margin-top: 10%;
+    }
+
+  .item1 h1 {
+      font-size: 60px;
+      color: white;
   }
 
+  .item1 p {
+      font-size: 24px;
+      color: white;
+      padding-top: 3%;
+  }
+
+  .btn {
+    margin-top: 5%;
+    width: 20%;
+    min-height: 10%;
+    max-height: 30%;
+    text-align: center;
+    color:white;
+
+  }
+
+  
   .item2 {
       grid-area:content;
   }
 
-.item1{background:LightSkyBlue;}
-.item2{background:LightSalmon;}
-.item3{background:PaleTurquoise;}
-.item4{background:LightPink;}
-.item5{background:PaleGreen;}
+  .testimonials-head {
+      margin-top: 10%;
+  }
 
+.testimonials-slide {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    width: 80%;
+  }
+  
+  /* Clear floats after containers */
+  .testimonials-slide::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+  .testimonials-slide img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Increase the font-size of a span element */
+  .testimonials-slide span {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  /* Add media queries for responsiveness. This will center both the text and the image inside the container */
+  @media (max-width: 500px) {
+    .testimonials-slide {
+      text-align: center;
+    }
+  
+    .testimonials-slide img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+  }
 
+  @media (min-width: 1020px) {
+    #spacing-testi {
+        margin-left: 10%;
+    }
+  }
 
+/* Footer */
 
-
-
-
-
-
-/* GAMES SECTION */
-
-/* .game {
-    
-        width: 100%;
-        height: 100vh;
-        position:relative; 
-        background: url(assets/the-games-bg.jpg);
-        background-size: cover;
-}
-
-.section-title{
-    margin-top: 30%;
-    color: white;
-    width: 100%;
-}
-
-.section-title h1 {
-    font-size: 72px;
-    color:white;
-} */
-
-/*fucking goooddddddddd -->*/
-/* .img-carousel{
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-top: 30%;
-} */
-
-
-/* FEATURES SECTION */
-
-/* .features {
-    
-    width: 100%;
-    height: 100vh;
-    position:relative; 
-    background: url(assets/features.jpg);
-    background-size: cover;
-}
-
-.section-title2 {
-    color: white;
-    margin-top: 35%;
-
-}
-
-.section-title2 h1 {
-    font-size: 72px;
-    color:white;
-}
-
-.title-list{
-    margin-top: 15%;
-}
-.title-list h3 {
-    font-size: 28px;
-    color: orange;
-}
-
-.title-list p {
-    margin-top:5%;
-
-} */
-
-/* SYSTEM REQUIREMENTS SECTION */
-
-/* .system-req {
+.footer {
     width: 100%;
     height: 100vh;
     position:relative; 
-    background: url(assets/requirements.png);
+    background: url(assets/footerbackground.png);
     background-size: cover;
 }
 
-.section-title3 {
-    margin-top: 10%;
-}
 
-.section-title3 h1 {
-    font-size: 70px;
-    color:white;
-}
-
-
-.c {
-    margin-top: 10%;
-    width: 100%;
-    table-layout:fixed;
-    border-collapse:collapse;
-}
-
-.c h2 {
-    color: orange;
-}
-
-.c p {
-    color: white;
-} */
-
-
-
-
-
-
-
-
-/* .container promo-title {
-    font-size: 60px;
-    color: white;
-}
-
-.container subtitle {
-    font-size 16px;
-    color: white;
-} */
-
-/* .game-container{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.content2 {
-    padding-left: 10%;
-    padding-top: 15%;
-}
-
-
-
- */
 
 
 
