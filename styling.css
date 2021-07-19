@@ -46,6 +46,7 @@ body {
     display:grid;
     align-items:center;
     text-align: center;
+    grid-template-rows: auto 10%;
 }
 
 /* test case untuk page 1 */
@@ -68,22 +69,22 @@ body {
 }
 
 .hero-button {
-
     padding-bottom: 10%;
 }
 
-.btn {
-    
+.buttonhero {
     font-size: 24px;
     font-weight: bold;
     color: black;
     background-color: orange;
-
+    color: white;
     text-align: center;
     line-height: 1.1;
+    top: 25%;
     }
 
-    .bottom-text {
+.bottom-text {
+        padding-top: 10%;
         color: white;
     }
 
@@ -131,6 +132,7 @@ body {
         "title carousel carousel carousel carousel";
     }
     .d2 {
+        left: 10%;
         padding-top: 10%;
     }
   }
@@ -191,6 +193,11 @@ body {
     color: orange;
 }
 
+.features-list p {
+    padding-top: 5%;
+    color: white;
+}
+
 .feature-subtitle {
     padding-top: 3%;
     color: white;
@@ -208,17 +215,14 @@ body {
 
 .system-master {
     padding-top: 5%;
-    background: red;
 }
 
 .content-system-req {
     padding-top: 5%;
-    background: blue;
 
 }
 
 .system-req-title {
-    background: pink;
 
 }
 
@@ -229,8 +233,14 @@ body {
 
 .table-list {
     padding-top: 5%;
-    background: green;
+}
 
+.table-list h2 {
+color: orange;
+}
+
+.table-list p {
+    color: white;
 }
 
 /* testimonials */
@@ -280,7 +290,7 @@ body {
       grid-template-areas:
         "header content";
     }
-    .item1 {
+    .testiomonials-text {
         padding-left: 10%;
         display:grid;
         grid-area: header;
@@ -288,31 +298,32 @@ body {
       }   
   }
 
-  .item1 {
+  .testimonials-text {
       display:grid;
       grid-area: header;
       align-items: center;
       margin-top: 10%;
     }
 
-  .item1 h1 {
+  .testimonials-text h1 {
       font-size: 60px;
       color: white;
   }
 
-  .item1 p {
+  .testimonials-text p {
       font-size: 24px;
       color: white;
       padding-top: 3%;
   }
 
-  .btn {
+  .button-testi {
     margin-top: 5%;
     width: 20%;
     min-height: 10%;
     max-height: 30%;
     text-align: center;
     color:white;
+    background-color: orange;
 
   }
 
@@ -326,8 +337,9 @@ body {
   }
 
 .testimonials-slide {
+    color: white;
     border: 2px solid #ccc;
-    background-color: #eee;
+    background-color: #18191a;
     border-radius: 5px;
     padding: 16px;
     margin: 16px 0;
@@ -382,6 +394,84 @@ body {
     background: url(assets/footerbackground.png);
     background-size: cover;
 }
+
+.content-form {
+    color: white;
+}
+
+.skullimage {
+    background: url(assets/image\ .png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.form-inline {
+}
+
+.content-form form .form-control {
+    background: #eff1f4;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 9px;
+    height: 45px;
+    margin-right: 10px;
+    min-width: 50vh
+}
+
+.footer-footer {
+    height: 15%;
+}
+
+.list-footer {
+    display:inline;
+}
+
+.footer-last {
+    height: 10%;
+    color: white;
+}
+
+.button-footer {
+    display: inline-block;
+    background-color: orange;
+    min-width: 30vh;
+    color: white;
+}
+
+.footer-link {
+    height: 15%;
+}
+
+
+
+
+
+
+/* .content-footer {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 5% 80% 15%;
+}
+
+.footer2 {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 40% auto;
+}
+
+.gambarskull {
+    background-color: blue;
+}
+
+.textfooter {
+    background-color: green;
+} */
 
 
 
