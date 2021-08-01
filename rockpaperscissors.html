@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+   
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+   ></script>
+
+   <script
+   src="js/bootstrap.min.js"></script>
+
+    <link
+    href="css/bootstrap.min.css"
+    type="text/css"
+    rel="stylesheet"
+    >
+    <link rel="stylesheet" href="rockpaperscissors.css" 
+    >
+
+
+</head>
+<body>
+    <section class ="paperglobal">
+        <div class = "title-content pt-3">
+            <h1 id= "game-ref" class=" "> ROCK PAPER SCISSORS <br/> 
+        </h1>
+            </div>
+
+            <header class="header">
+                <button id="restart" class="restart-btn">Restart Game</button>
+                <div id="score" class="score">
+                  <p>Player: 0</p>
+                  <p>Computer: 0</p>
+                </div>
+              </header>
+            
+
+<div class= "UserCompChoices mt-5" >
+    <div class = "row">
+        <div class = "col-5">
+            <h2>Player 1</h2>
+            <div class="container">
+                <div id="player-choices" class="choices hover-large">
+                    <div class="container">
+                        <div class="bingkai mx-auto bg-info ">
+                                <img id= "rock"class="icon playerbatu pilihan pilihan-rock"  src="/assets/batu.png">
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="bingkai mx-auto">
+                                <img id = "paper"class="icon playerkertas pilihan pilihan-paper"  src="/assets/kertas.png">
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="bingkai mx-auto">
+                                <img id="scissors" class="icon playergunting pilihan pilihan-scissors" src="/assets/gunting.png">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class= "col-2 ">
+            <div id="papantengah" class="container vsHome ">
+                    <h1>VS</h1>
+            </div>
+        </div>
+
+  
+        <div class = "col-5">
+            <h2>COM</h2>
+            <div class="container">
+            <div id="comp-choices" class="choices">
+                <div class="container">
+                    <div class="bingkaiKomp mx-auto">
+                            <img id="rock" class="icon komputerbatu  pilihankomp"  src="/assets/batu.png">
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="bingkaiKomp mx-auto">
+                            <img id="paper"class="icon komputerkertas  pilihankomp"  src="/assets/kertas.png">
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="bingkaiKomp mx-auto">
+                            <img id="scissors" class="icon komputergunting  pilihankomp"  src="/assets/gunting.png">
+                    </div>
+                </div>
+
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+    
+    
+      
+          <!-- POP up -->
+          <div class="modal">
+            <div id="result" class="modal-content"></div>
+          </div>
+    
+              <!-- Reset Button  -->
+              <div class = "row">
+                  <div class = "col">
+                    <div class = "reset">
+                        <div id ="reset" class = "reset">
+                            <img class = "reset1"width="48" height="48" src="/assets/refresh.png">
+                        </div>
+                    </div>
+                  </div>
+
+              </div>
+    
+    
+</div>
+
+</section>
+<script src="/rockpaperscissors.js" type="text/javascript"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+   
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+   ></script>
+
+   <script
+   src="js/bootstrap.min.js"></script>
+
+    <link
+    href="css/bootstrap.min.css"
+    type="text/css"
+    rel="stylesheet"
+    >
+    <link rel="stylesheet" href="rockpaperscissors.css" 
+    >
+
+
+</head>
+<body>
+    <button id="restart" class="restart-btn">Restart Game</button>
+
+            
+
+<div class= "UserCompChoices mt-5" >
+    <div class = "row">
+        <div class = "col-5">
+            <h2>Player 1</h2>
+            <div class="container">
+                <div id="player-choices" class="choices hover-large">
+                    <div class="container">
+                        <div id="bingkairock" class="bingkai bingkaibatu mx-auto ">
+                                <img id= "rock"class="icon playerbatu pilihan pilihan-rock"  src="/assets/batu.png">
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div id="bingkaipaper" class="bingkai bingkaikertas mx-auto">
+                                <img id = "paper"class="icon playerkertas pilihan pilihan-paper"  src="/assets/kertas.png">
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div id="bingkaiscissors" class="bingkai bingkaigunting mx-auto">
+                                <img id="scissors" class="icon playergunting pilihan pilihan-scissors" src="/assets/gunting.png">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class= "col-2 ">
+            <div id="papantengah" class="container vsHome ">
+                    <h1>VS</h1>
+            </div>
+        </div>
+
+  
+        <div class = "col-5">
+            <h2>COM</h2>
+            <div class="container">
+            <div id="comp-choices" class="choices">
+                <div class="container">
+                    <div id="bingkairockAI" class="bingkaiKomp kompbingkaibatu mx-auto">
+                            <img id="rockAI" class="icon komputerbatu  pilihankomp"  src="/assets/batu.png">
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div id= "bingkaipaperAI" class="bingkaiKomp kompbingkaikertas mx-auto">
+                            <img id="paperAI"class="icon komputerkertas  pilihankomp"  src="/assets/kertas.png">
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div id="bingkaiscissorsAI" class="bingkaiKomp kompbingkaigunting mx-auto">
+                            <img id="scissorsAI" class="icon komputergunting  pilihankomp"  src="/assets/gunting.png">
+                    </div>
+                </div>
+
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+    
+    
+      
+          <!-- POP up -->
+          <div class="modal">
+            <div id="result" class="modal-content"></div>
+          </div>
+    
+              <!-- Reset Button  -->
+              <div class = "row">
+                  <div class = "col">
+                    <div class = "reset">
+                        <div id ="reset" class = "reset">
+                            <img id="restartbutton" class = "reset1"width="48" height="48" src="/assets/refresh.png">
+                        </div>
+                    </div>
+                  </div>
+
+              </div>
+    
+    
+</div>
+
+</section>
+<script src="/baru.js" type="text/javascript"></script>
+
+</body>
+
+</html>
