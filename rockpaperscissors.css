@@ -18,7 +18,7 @@ html {
 
 
 
-.UserCompChoices {
+.PlayerCompChoices {
     height: 100%;
     display:grid;
     align-items:center;
@@ -41,7 +41,7 @@ html {
     flex-wrap: wrap;
 }
 
-.pilihankomp {
+.pilihanAI {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -58,18 +58,6 @@ html {
     height: 15vh; 
     position:relative;
 }
-.bingkaiKomp {
-    width: 20%;
-    height: 15vh; 
-    position:relative;
-}
-
-
-.bingkai:hover {
-    background-color: green;
-    color: white;
-    transition: 0.3s ease-in;
-  }
 
 
 .vsHome {
@@ -107,35 +95,4 @@ html {
     cursor:pointer;
 }
 
-
-/* modal */
-.modal-content {
-    background: #fff;
-    text-align: center;
-    margin: 10% auto;
-    width: 350px;
-    border-radius: 10px;
-    padding: 3rem;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-  }
-  
-  .modal-content h1 {
-      color: black;
-    margin-bottom: 1rem;
-  }
-  
-  .modal-content p {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-  }
-  
-  @keyframes modalopen {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
   

@@ -24,42 +24,28 @@
 
 </head>
 <body>
-    <section class ="paperglobal">
-        <div class = "title-content pt-3">
-            <h1 id= "game-ref" class=" "> ROCK PAPER SCISSORS <br/> 
-        </h1>
-            </div>
 
-            <header class="header">
-                <button id="restart" class="restart-btn">Restart Game</button>
-                <div id="score" class="score">
-                  <p>Player: 0</p>
-                  <p>Computer: 0</p>
-                </div>
-              </header>
-            
-
-<div class= "UserCompChoices mt-5" >
+<div class= "PlayerCompChoices mt-5" >
     <div class = "row">
         <div class = "col-5">
             <h2>Player 1</h2>
             <div class="container">
                 <div id="player-choices" class="choices hover-large">
                     <div class="container">
-                        <div class="bingkai mx-auto bg-info ">
-                                <img id= "rock"class="icon playerbatu pilihan pilihan-rock"  src="/assets/batu.png">
+                        <div id="bingkairock" class="bingkai  mx-auto ">
+                                <img id= "rock"class="icon  pilihan "  src="/assets/batu.png">
                         </div>
                     </div>
 
                     <div class="container">
-                        <div class="bingkai mx-auto">
-                                <img id = "paper"class="icon playerkertas pilihan pilihan-paper"  src="/assets/kertas.png">
+                        <div id="bingkaipaper" class="bingkai  mx-auto">
+                                <img id = "paper"class="icon  pilihan"  src="/assets/kertas.png">
                         </div>
                     </div>
 
                     <div class="container">
-                        <div class="bingkai mx-auto">
-                                <img id="scissors" class="icon playergunting pilihan pilihan-scissors" src="/assets/gunting.png">
+                        <div id="bingkaiscissors" class="bingkai  mx-auto">
+                                <img id="scissors" class="icon  pilihan" src="/assets/gunting.png">
                         </div>
                     </div>
 
@@ -81,20 +67,20 @@
             <div class="container">
             <div id="comp-choices" class="choices">
                 <div class="container">
-                    <div class="bingkaiKomp mx-auto">
-                            <img id="rock" class="icon komputerbatu  pilihankomp"  src="/assets/batu.png">
+                    <div id="bingkairockAI" class="bingkai  mx-auto">
+                            <img id="rockAI" class="icon   pilihanAI"  src="/assets/batu.png">
                     </div>
                 </div>
 
                 <div class="container">
-                    <div class="bingkaiKomp mx-auto">
-                            <img id="paper"class="icon komputerkertas  pilihankomp"  src="/assets/kertas.png">
+                    <div id= "bingkaipaperAI" class="bingkai  mx-auto">
+                            <img id="paperAI"class="icon   pilihanAI"  src="/assets/kertas.png">
                     </div>
                 </div>
 
                 <div class="container">
-                    <div class="bingkaiKomp mx-auto">
-                            <img id="scissors" class="icon komputergunting  pilihankomp"  src="/assets/gunting.png">
+                    <div id="bingkaiscissorsAI" class="bingkai mx-auto">
+                            <img id="scissorsAI" class="icon   pilihanAI"  src="/assets/gunting.png">
                     </div>
                 </div>
 
@@ -106,18 +92,12 @@
     </div>
     
     
-      
-          <!-- POP up -->
-          <div class="modal">
-            <div id="result" class="modal-content"></div>
-          </div>
-    
               <!-- Reset Button  -->
               <div class = "row">
                   <div class = "col">
                     <div class = "reset">
                         <div id ="reset" class = "reset">
-                            <img class = "reset1"width="48" height="48" src="/assets/refresh.png">
+                            <img id="restartbutton" class = "reset1"width="48" height="48" src="/assets/refresh.png">
                         </div>
                     </div>
                   </div>
