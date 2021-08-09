@@ -33,8 +33,8 @@ function pickRock() {
     randomAI = Math.floor(Math.random()*3);
     choiceAI = optionsAI[randomAI];
     bingkairock.style.backgroundColor= "#C0C0C0";
-    bingkaipaper.style.backgroundColor= "#000000";
-    bingkaiscissors.style.backgroundColor= "#000000";
+    bingkaipaper.style.backgroundColor= "#a0845c";
+    bingkaiscissors.style.backgroundColor= "#a0845c";
 }
 
 //apabila player memilih kertas
@@ -45,9 +45,9 @@ function pickPaper() {
   optionsAI = ["rock","paper","scissors"];
   randomAI = Math.floor(Math.random() * 3);
   choiceAI = optionsAI[randomAI];
-  bingkairock.style.backgroundColor= "#000000";
+  bingkairock.style.backgroundColor= "#a0845c";
   bingkaipaper.style.backgroundColor= "#C0C0C0";
-  bingkaiscissors.style.backgroundColor= "#000000";
+  bingkaiscissors.style.backgroundColor= "#a0845c";
 
 }
 
@@ -59,8 +59,8 @@ function pickScissors() {
   optionsAI = ["rock","paper","scissors"];
   randomAI = Math.floor(Math.random() * 3);
   choiceAI = optionsAI[randomAI]; 
-  bingkairock.style.backgroundColor= "#000000";
-  bingkaipaper.style.backgroundColor= "#000000";
+  bingkairock.style.backgroundColor= "#a0845c";
+  bingkaipaper.style.backgroundColor= "#a0845c";
   bingkaiscissors.style.backgroundColor= "#C0C0C0";
 }
 
@@ -83,19 +83,19 @@ function rockPaperScissors() {
 
 if (choiceAI =="rock") {
         bingkairockAI.style.backgroundColor= "#C0C0C0";
-        bingkaipaperAI.style.backgroundColor= "#000000";
-        bingkaiscissorsAI.style.backgroundColor= "#000000";          
+        bingkaipaperAI.style.backgroundColor= "#a0845c";
+        bingkaiscissorsAI.style.backgroundColor= "#a0845c";          
 }
       
 if (choiceAI =="paper") {
-        bingkairockAI.style.backgroundColor= "#000000";
+        bingkairockAI.style.backgroundColor= "#a0845c";
         bingkaipaperAI.style.backgroundColor= "#C0C0C0";
-        document.getElementById("bingkaiscissorsAI").style.backgroundColor= "#000000";      
+        document.getElementById("bingkaiscissorsAI").style.backgroundColor= "#a0845c";      
 }
       
  if (choiceAI =="scissors") {
-        bingkairockAI.style.backgroundColor= "#000000";
-        bingkaipaperAI.style.backgroundColor= "#000000";
+        bingkairockAI.style.backgroundColor= "#a0845c";
+        bingkaipaperAI.style.backgroundColor= "#a0845c";
         bingkaiscissorsAI.style.backgroundColor= "#C0C0C0";
     } 
 }
